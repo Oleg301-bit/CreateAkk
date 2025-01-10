@@ -3,82 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <title>Your account</title>
+    <link rel="stylesheet" href="recet.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <form>
-      <header class="header-contener">
+      <div class="header">
+        <h1>Create an account</h1>
+        <p class="text-header">We always keep your name and email address</p>
+        <p>private</p>
+      </div>
+      <div class="flex-form">
+        <input type="text" id="fname" placeholder="First name" />
+        <input type="text" id="lname" placeholder="Last name" />
+      </div>
+      <div class="flex-form">
+        <input type="text" id="dname" placeholder="Display Name" />
+        <input type="email" id="email" placeholder="Email Address" />
+      </div>
+      <div class="flex-form">
+        <input type="password" id="passw" placeholder="Password" />
+        <input
+          type="password"
+          id="cpassw"
+          placeholder="Password Confirmation"
+        />
+      </div>
+      <div class="under-inp">
         <div>
-          <h1>Create an account</h1>
-          <p class="under-main-header">
-            We always keep your name and email address private
+          <input type="radio" id="buy" name="choose" />
+        </div>
+        <div class="oposit-to-point">
+          <label for="buy" class="captilized"
+            >Join as <span class="lowercase">a</span> buyer</label
+          >
+          <p class="small-text">
+            I am looking for a Name,Logo or Tagline for my business, brand or
+            product.
           </p>
         </div>
-      </header>
-      <div class="structure">
-        <main>
-          <div class="flex-contener">
-            <div class="f-block">
-              <div class="position">
-                <input type="text" placeholder="First name" />
-              </div>
-              <div class="position">
-                <input type="text" placeholder="Display Name" />
-              </div>
-              <div class="position">
-                <input type="password" placeholder="Password" />
-              </div>
-            </div>
-            <div class="f-block">
-              <div class="position">
-                <input type="text" placeholder="Last name" />
-              </div>
-              <div class="position">
-                <input type="email" placeholder="Email Address" />
-              </div>
-              <div class="position">
-                <input type="password" placeholder="Password Confirmation" />
-              </div>
-            </div>
-          </div>
-          <div class="choose-item">
-            <input type="radio" id="join" name="choose" />
-            <div>
-              <label for="join">Join As a Buyer</label>
-              <p>
-                I am looking for a Name,Logo or Tagline for my business,branch
-                product
-              </p>
-            </div>
-          </div>
-          <div class="choose-item">
-            <input type="radio" id="join" name="choose" />
-            <div>
-              <label for="join">Join As a Creative or Marketplace Seller</label>
-              <p>
-                I plan to submit name ideas,Logo design or sell names in Domain
-                Marketplace
-              </p>
-            </div>
-          </div>
-          <div>
-            <input type="checkbox" id="used" />
-            <label for="used"
-              >Allow Squadhelp to send marketing/promotional offers from time to
-              time</label
-            >
-          </div>
-        </main>
-        <footer>
-          <button type="submit">
-            <div class="button">
-              <div>Create</div>
-              <div>account</div>
-            </div>
-          </button>
-        </footer>
       </div>
+      <div class="under-inp">
+        <div>
+          <input type="radio" id="creat" name="choose" />
+        </div>
+        <div class="oposit-to-point">
+          <label for="creat" class="captilized"
+            >Join as creative <span class="lowercase">or</span> marketplace
+            seller</label
+          >
+          <p class="small-text">
+            I plan to submit name ideas,Logo designs or sell names in Domain
+            Marketplace.
+          </p>
+        </div>
+      </div>
+      <div class="above-button">
+        <div>
+          <input type="checkbox" id="check" />
+        </div>
+        <label for="check" class="small-text"
+          >Allow Squadhelp to send marketing/promotional offers from time to
+          time</label
+        >
+      </div>
+
+      <button type="submit" class="flex-btn">
+        <span>Create</span>
+        <span>account</span>
+      </button>
+      <div class="end"></div>
     </form>
   </body>
 </html>
