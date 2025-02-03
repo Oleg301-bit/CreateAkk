@@ -25,6 +25,8 @@ h1 {
 }
 .header-description {
   font-size: 1.2em;
+  width: 80%;
+  text-align: center;
 }
 .input-container {
   display: flex;
