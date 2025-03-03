@@ -42,7 +42,8 @@ input[type='email'],
 input[type='password'] {
   padding: 1.5em 2em;
   border: none;
-  border-radius: 5%;
+  border-radius: 5px;
+  width: 48%;
 }
 .radio-container {
   display: flex;
