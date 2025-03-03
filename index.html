@@ -8,73 +8,69 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form>
-      <div class="form-container">
-        <div class="header-container">
-          <h1>Create an account</h1>
-          <p class="header-description">
-            We always keep your name and email address private
-          </p>
+    <form class="form-container">
+      <div class="header-container">
+        <h1 class="main-title">Create an account</h1>
+        <p class="header-description">
+          We always keep your name and email address private
+        </p>
+      </div>
+      <div class="input-container">
+        <div class="input-field">
+          <input type="text" id="fname" placeholder="First name" />
+          <input type="text" id="lname" placeholder="Last name" />
         </div>
-        <div class="input-container">
-          <div class="input-field">
-            <input type="text" id="fname" placeholder="First name" />
-            <input type="text" id="lname" placeholder="Last name" />
-          </div>
-          <div class="input-field">
-            <input type="text" id="dname" placeholder="Display Name" />
-            <input type="email" id="email" placeholder="Email Address" />
-          </div>
-          <div class="input-field">
-            <input type="password" id="passw" placeholder="Password" />
-            <input
-              type="password"
-              id="cpassw"
-              placeholder="Password Confirmation"
-            />
-          </div>
+        <div class="input-field">
+          <input type="text" id="dname" placeholder="Display Name" />
+          <input type="email" id="email" placeholder="Email Address" />
         </div>
-        <div class="radio-container">
-          <div class="choice">
-            <div class="point-place">
-              <input type="radio" id="buy" name="choose" />
-            </div>
-            <div>
-              <label for="buy" class="radio-title">Join As a Buyer</label>
-              <p class="description">
-                I am looking for a Name,Logo or Tagline for my business, brand
-                or product.
-              </p>
-            </div>
-          </div>
-          <div class="choice">
-            <div class="point-place">
-              <input type="radio" id="creat" name="choose" />
-            </div>
-            <div>
-              <label for="creat" class="radio-title"
-                >Join As creative or Marketplace Seller</label
-              >
-              <p class="description">
-                I plan to submit name ideas,Logo designs or sell names in Domain
-                Marketplace.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="checkbox-container">
-          <div class="point-place">
-            <input type="checkbox" id="check" />
-          </div>
-          <label for="check" class="description"
-            >Allow Squadhelp to send marketing/promotional offers from time to
-            time</label
-          >
-        </div>
-        <div class="btn-container">
-          <div class="button">Create account</div>
+        <div class="input-field">
+          <input type="password" id="passw" placeholder="Password" />
+          <input
+            type="password"
+            id="cpassw"
+            placeholder="Password Confirmation"
+          />
         </div>
       </div>
+      <div class="radio-container">
+        <div class="choice">
+          <div class="point-place">
+            <input type="radio" id="buy" name="choose" />
+          </div>
+          <div>
+            <label for="buy" class="radio-title">Join As a Buyer</label>
+            <p class="description">
+              I am looking for a Name,Logo or Tagline for my business, brand or
+              product.
+            </p>
+          </div>
+        </div>
+        <div class="choice">
+          <div class="point-place">
+            <input type="radio" id="create" name="choose" />
+          </div>
+          <div>
+            <label for="create" class="radio-title"
+              >Join As creative or Marketplace Seller</label
+            >
+            <p class="description">
+              I plan to submit name ideas,Logo designs or sell names in Domain
+              Marketplace.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="checkbox-container">
+        <div class="point-place">
+          <input type="checkbox" id="check" />
+        </div>
+        <label for="check" class="description"
+          >Allow Squadhelp to send marketing/promotional offers from time to
+          time</label
+        >
+      </div>
+      <div class="button">Create account</div>
     </form>
   </body>
 </html>
